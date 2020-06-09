@@ -1,0 +1,179 @@
+body {
+	font-size: 16px;
+	background: rgb(153, 237, 250);
+}
+
+.container {
+	background: #30dcf5;
+	padding-left: 0;
+	padding-right: 0;
+	border-left: 1px solid #008ca5;
+	border-right: 1px solid #008ca5;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 800px !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 800px !important;
+	}
+}
+
+.navbar {
+	background: none;
+	border: none;
+	margin: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+	font-size: 14pt;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-shadow: -1px -1px 0 #008ca5,
+		1px -1px 0 #008ca5,
+		-1px 1px 0 #008ca5,
+		1px 1px 0 #008ca5;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .open > a {
+	background: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	filter: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .open > a:hover {
+	background: none;
+}
+
+.container > .navbar-header {
+	margin: 0;
+}
+
+.parrot-header {
+	background-image: url("/images/landing_splash.png");
+	background-size: cover;
+	width: 100%;
+	height: 320px;
+	margin-top: -78px;
+}
+
+#title {
+	padding-top: 140px;
+	padding-bottom: 0.7em;
+}
+
+@media (max-width: 500px) {
+	.parrot-header {
+		height: 170px;
+		margin-top: -50px;
+	}
+
+	#title {
+		padding-top: 60px;
+		padding-bottom: 0em;
+	}
+}
+
+.whitebox {
+	background: white;
+	padding: 1em;
+	border-top: 1px solid #008ca5;
+	border-bottom: 1px solid #008ca5;
+}
+
+
+h1, h2 {
+	font-weight: bold;
+	color: white;
+	text-shadow: -1px -1px 0 #008ca5,
+		1px -1px 0 #008ca5,
+		-1px 1px 0 #008ca5,
+		1px 1px 0 #008ca5;
+}
+
+h1 {
+	font-size: 32pt;
+}
+
+h4 {
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.whitebox h1, .whitebox h2 {
+	color: black;
+	text-shadow: none;
+}
+
+.footer {
+	border-bottom: 1px solid #008ca5;
+}
+
+.btn-round {
+	border-radius: 17px;
+	background: white;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+.btn-round-primary {
+	border-radius: 17px;
+	background: #008ca5;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.feature {
+	text-align: justify;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.2em;
+	padding-right: 0.5em;
+}
+
+.rfeature {
+	text-align: justify;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 0.3em;
+	padding-right: 1.2em;
+}
+
+/* Handle missing images */
+img:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	height: 62px;
+	width: 62px;
+	color: white;
+	background: white;
+	background-image: url("/images/podcast-symbol.png");
+	background-size: cover;
+}
+
+.podcastimage {
+	height: 200px;
+	z-index: 3;
+}
+
+.podcastbackground {
+	background-size: cover;
+	position: absolute;
+	display: block;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	height: 250px;
+	width: 800px;
+	margin: auto;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
